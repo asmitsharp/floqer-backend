@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/csv"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -73,7 +72,6 @@ func loadCSVData() {
 			CompanySize:       record[10],
 		})
 	}
-	fmt.Println(records)
 }
 
 func getSalaries(c *gin.Context) {
