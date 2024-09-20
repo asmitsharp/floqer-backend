@@ -47,7 +47,7 @@ func main() {
 	r.GET("/api/salaries/:year", getSalariesByYear)
 	r.POST("/api/salaries/chat", handleChat)
 
-	r.Run(":8081")
+	r.Run(":8080")
 }
 
 func loadCSVData() {
